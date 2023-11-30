@@ -1,0 +1,32 @@
+{
+  "name": "cv_manager",
+  "version": "1.0.0",
+  "description": "Project for master's thesis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ralitsa-Vuntsova/cv-manager.git"
+  },
+  "keywords": [
+    "\"cv",
+    "manager\""
+  ],
+  "author": "Ralitsa Vuntsova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ralitsa-Vuntsova/cv-manager/issues"
+  },
+  "homepage": "https://github.com/Ralitsa-Vuntsova/cv-manager#readme",
+  "devDependencies": {
+    "@types/node": "^20.10.1",
+    "ts-node": "10.9.1",
+    "typescript": "5.3.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
