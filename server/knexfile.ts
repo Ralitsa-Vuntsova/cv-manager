@@ -1,6 +1,6 @@
 // Update with your config settings.
 
-import { config } from "./config";
+import { config } from './config';
 
 /**
  * @type { Object.<string, import("knex").Knex.Config> }
@@ -9,7 +9,7 @@ const knexConfig = {
 
   development: {
     client: 'postgresql',
-    connection: config.db,
+    connection: config.get('db'),
     pool: {
       min: 2,
       max: 10
