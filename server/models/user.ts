@@ -1,6 +1,6 @@
-import { Model } from 'objection';
+import { BaseModel } from './base-model';
 
-export class UserModel extends Model {
+export class UserModel extends BaseModel {
   static tableName = 'users';
 
   id!: number;
@@ -9,6 +9,4 @@ export class UserModel extends Model {
   username!: string;
   password!: string;
   email!: string;
-  created_at!: Date;
-  updated_at!: Date;
 }

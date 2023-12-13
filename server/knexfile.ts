@@ -1,12 +1,12 @@
 // Update with your config settings.
 
+import { knexSnakeCaseMappers } from 'objection';
 import { config } from './config';
 
 /**
  * @type { Object.<string, import("knex").Knex.Config> }
  */
 const knexConfig = {
-
   development: {
     client: 'postgresql',
     connection: config.get('db'),
@@ -16,9 +16,9 @@ const knexConfig = {
     },
     migrations: {
       tableName: 'knex_migrations'
-    }
+    },
+    ...knexSnakeCaseMappers()
   }
-
 };
 
 export default knexConfig;
