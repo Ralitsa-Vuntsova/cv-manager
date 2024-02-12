@@ -31,6 +31,14 @@ const config = convict ({
       env: 'DB_NAME',
       default: 'cv_manager'
     }
+  },
+  server: {
+    port: {
+      doc: 'Application server port',
+      env: 'SERVER_PORT',
+      format: 'port',
+      default: 2000
+    }
   }
 });
 
